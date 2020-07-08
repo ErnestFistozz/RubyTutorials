@@ -1,19 +1,21 @@
 variable = 2
 
 #This is a comment
-a = 1
-b = 'string'
-c = Object.new
+print <<EOF
+		This is a beggining of  a 'Here document'
+		ending line
+EOF
 
-bacon_type = 'crisp'
-2.times do
-	puts bacon_type
-	temperature = 300
-end
-hour = 15
+BEGIN{
+	puts "This is called first before anything else"
+}
 
-if hour% 3 ==0
-	puts 'Its BACON time'
-end
+END{
+	puts "This is called at the very end of a program, irrespective of everything\n in the code"
+	puts "Quite weird I know but thats how it works"
+}
 
-puts Math.sqrt(19)
+#multi-line comment
+=begin
+hello, this is a comment
+=end
