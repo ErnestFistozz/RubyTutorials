@@ -66,3 +66,7 @@ class Vehicle
 		@brand_name = veh_name
 	end
 end
+
+#Creating new objects with 'No-default' constructor 
+bmw =  Vehicle.new(1,"bwm", "2series")
+mazda =  Vehicle.new(2,"mazda", "cx3")
