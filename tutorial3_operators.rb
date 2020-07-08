@@ -64,3 +64,42 @@ puts "Test same type and value: #{car1.eql?(car2)}" #failed because object point
 car3 = Car.new("mazda")
 car4 = Car.new("mazda")
 puts "Test Reference type and value: #{car3.equal?(car4)}"
+
+=begin
+	Logical Operators
+=end
+#AND
+$is_alive = true
+$is_dead = false
+puts "AND: #{$is_alive and $is_dead}"
+puts "AND: #{$is_alive && $is_dead}"
+
+#OR
+puts "OR: #{$is_alive or $is_dead}"
+puts "OR: #{$is_alive || $is_dead}"
+
+#NOT
+puts "NOT: #{ !$is_alive}"
+puts "NOT: #{ not $is_alive}"
+
+=begin
+	Tenary Operator
+=end
+
+$result =  16<18? "Yes" : "No"
+puts "Tenary Result: #{$result}"
+
+=begin
+	Ruby Range Operators
+=end
+
+#Include all numbers starting from beginning index all the way to ending index
+puts "Includes all numbers"
+(1..10).each do |item|
+	puts "Value: #{item}"
+end
+
+puts "Excludes the last number"
+(1...10).each do |item|
+	puts "Value: #{item}"
+end
