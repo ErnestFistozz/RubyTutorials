@@ -129,3 +129,9 @@ puts "Instance Defined: #{defined?thabo}" #returns local variable
 MY_AGE = 10
 puts "Constant Defined: #{defined?MY_AGE}" #return constant
 
+#checks super
+puts "Super Defined: #{defined?super}"
+
+
+
+
