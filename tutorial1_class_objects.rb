@@ -42,3 +42,27 @@ end
 # $name
 
 $file_name = 'ruby'
+
+
+=begin
+	Creating a new instance works as follows
+=end
+
+cust1 = Custumer.new
+
+=begin
+class with constructor is defined with the 
+	initialize method
+=end
+
+class Vehicle
+	#This is a static or class variable
+	@@number_of_cars = 0
+	#This line defines the constructor
+	def initialize(id, veh_name, model)
+		#these are the data fields or data members
+		@vehicle_id = id
+		@vehicle_model =  model
+		@brand_name = veh_name
+	end
+end
