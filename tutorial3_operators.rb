@@ -103,3 +103,29 @@ puts "Excludes the last number"
 (1...10).each do |item|
 	puts "Value: #{item}"
 end
+
+=begin
+	Ruby defined Operator
+=end
+#checks if something is defined
+#if checked against a methods --> returns a string description if exists, undefined otherwise
+# variable returns string description if available and initialised , undefined otherwise
+
+$variable = 10
+def hello
+	puts "Hello"
+end
+puts "Global Defined: #{defined?$variable}" #returns global-variables
+puts "Method Defined: #{defined?hello}" # returns method
+puts "Doesn't Exist: #{defined?foo}" # returns nil
+
+class Person
+end
+
+thabo = Person.new
+puts "Class Defined: #{defined?Person}" #returns constant (for a class)
+puts "Instance Defined: #{defined?thabo}" #returns local variable
+
+MY_AGE = 10
+puts "Constant Defined: #{defined?MY_AGE}" #return constant
+
